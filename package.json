@@ -1,8 +1,0 @@
-{
-  "name": "www-bestandbrown-com",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "node scripts/static-server.mjs public/clone"
-  }
-}

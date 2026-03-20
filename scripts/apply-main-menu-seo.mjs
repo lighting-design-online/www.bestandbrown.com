@@ -86,6 +86,21 @@ function injectCss(html) {
   return html.replace('</head>', '  <link rel="stylesheet" href="/assets/main-menu-seo.css" />\n</head>');
 }
 
+function injectGoogleTag(html) {
+  if (html.includes('G-GL2PN7CK68')) return html;
+  const googleTag = `  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GL2PN7CK68"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GL2PN7CK68');
+  </script>
+`;
+  return html.replace('</head>', `${googleTag}</head>`);
+}
+
 function updateFooterLegal(html) {
   return html
     .replace(
@@ -874,6 +889,7 @@ async function main() {
 
     const route = routeFor(file);
     html = injectCss(html);
+    html = injectGoogleTag(html);
     if (route && targets.has(route)) {
       const data = targets.get(route);
       html = setHeadTags(html, {

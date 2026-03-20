@@ -68,6 +68,7 @@ function stripOld(html) {
     .replace(/\n?\s*<div class="account ">\s*<ul class="account-links">[\s\S]*?<\/ul>\s*<\/div>/g, '')
     .replace(/\n?\s*<link rel="stylesheet" href="\/assets\/seo-layer\.css" \/>/g, '')
     .replace(/\n?\s*<script defer src="\/assets\/seo-layer\.js"><\/script>/g, '')
+    .replace(/\n?\s*<script type="text\/javascript" src="\/dist\/vue-app\.js"><\/script>/g, '')
     .replace(/\n?\s*<section class="seo-layer">[\s\S]*?<\/section>/g, '')
     .replace(/\n?\s*<link rel="stylesheet" href="\/assets\/main-menu-seo\.css" \/>/g, '')
     .replace(/\n?\s*<section class="main-menu-seo[^"]*">[\s\S]*?<\/section>/g, '')

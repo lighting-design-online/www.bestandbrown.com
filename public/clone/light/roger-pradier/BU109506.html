@@ -4,7 +4,7 @@
 
   <script>
     // Must be above Meta Section
-    var seedApplicationBaseSearchUrl = 'https://searchproxy.lightingenterprises.com';
+    var seedApplicationBaseSearchUrl = 'https://searchproxy.lightingdesignonline.com';
     var seedEsIndexAlias = 'bab-rel';
     var seedUserIncludeVat = true;
     var seedApplicationVatCoefficient = 1.2;
@@ -104,6 +104,7 @@
 <meta name="msapplication-config" content="/content/bab/icons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
+  <link rel="stylesheet" href="/assets/main-menu-seo.css" />
 </head>
 
 <body id="product">
@@ -132,30 +133,8 @@
     <div id="header-inner">
         <a href="/" id="logo" title="Best &amp; Brown"></a>
 
-<div id="search-box">
-    <div>
-        <autocomplete />
-    </div>
-</div>
-
 
 <div id="project-summary">
-</div>
-
-
-
-
-<div class="account ">
-
-    <ul class="account-links">
-            <li>
-                <a class="sign-in" href="/account/login?returnUrl=%2Flight%2Froger-pradier%2FBU109506" id="account-sign-in">Sign In</a>
-            </li>
-            <li class="divider">|</li>
-            <li>
-                <a class="register" href="/account/register?returnUrl=%2Flight%2Froger-pradier%2FBU109506" id="account-register">Register</a>
-            </li>
-    </ul>
 </div>
         <a href="tel:+442033975253" id="header-phone">+44 (0)203 397 52 53</a>
     </div>
@@ -164,20 +143,6 @@
 <div id="menu">
     <div id="menu-inner">
         <span id="menu-catalogue"><ul id="menu-parent"><li><a id="menu-ceiling" href="/browse/ceiling-fittings">Ceiling Fittings</a></li><li><a id="menu-exterior" href="/browse/exterior-lighting">Exterior Lighting</a></li><li><a id="menu-floor" href="/browse/floor-lamps">Floor Lamps</a></li><li><a id="menu-table" href="/browse/table-lamps">Table Lamps</a></li><li><a id="menu-wall" href="/browse/wall-lamps">Wall Lamps</a></li><li><a id="menu-bathroom" href="/browse/bathroom">Bathroom</a></li><li><a id="menu-bulbs" class="no-child" href="/browse/lamps-and-bulbs">Lamps & Bulbs</a></li><li><a id="menu-brands" class="no-child" href="/brands">Brands</a></li></ul></span>
-
-
-<div class="account ">
-
-    <ul class="account-links">
-            <li>
-                <a class="sign-in" href="/account/login?returnUrl=%2Flight%2Froger-pradier%2FBU109506" id="account-sign-in">Sign In</a>
-            </li>
-            <li class="divider">|</li>
-            <li>
-                <a class="register" href="/account/register?returnUrl=%2Flight%2Froger-pradier%2FBU109506" id="account-register">Register</a>
-            </li>
-    </ul>
-</div>
     </div>
     <div id="menu-dropdown">
         <div id="menu-ceiling-child">
@@ -451,27 +416,6 @@
     </div>
 </div>
 <input type="hidden" id="input-hidden-header-bab" />
-
-
-
-
-    <div id="header-breadcrumbs-container">
-        <ul>
-            <li><a href="/">Home</a></li>
-                <li>
-                        <a href="/browse">Lighting</a>
-                </li>
-                <li>
-                        <a href="/browse/exterior-lighting">Exterior Lighting</a>
-                </li>
-                <li>
-Roger Pradier Bermude Frosted Glass Motion Sensor Upwards Wall Bracket with White Reflector                </li>
-        </ul>
-    </div>
-
-
-    
-
     <!-- CONTENT -->
     <main>
       <div id="product-page">
@@ -819,7 +763,6 @@ For more information please download product specification</div>
       <ul class="methods">
         <li class="email"><a href="mailto:sales@bestandbrown.com"><span class="method-name">Email: </span>sales@bestandbrown.com</a></li>
         <li class="phone"><a href="tel:+442033975253"><span class="method-name">Phone: </span>+44 (0)203 397 52 53</a></li>
-        <li class="live-chat"><a onclick="$zoho.salesiq.floatwindow.visible('show');" href="#">Live chat</a></li>
         <li class="opening-hours">Customer Support Hours<br/><table><tr><td>Mon-Thur:</td><td>09:00 - 17:00</td></tr><tr><td>Fri:</td><td>09:00 - 15:00</td></tr></table></li>
       </ul>
     </div>
@@ -840,21 +783,6 @@ For more information please download product specification</div>
         <li><a href="/info/help/contact" class="footer-contact-link">Contact Us</a></li>
       </ul>
     </div>
-    <div id="footer-mailing-list-signup">
-      <label for="footer-mailing-list-input">
-        Get Inspired
-      </label>
-      <div class="input-container">
-        <form action="/api/mailing-list/add" method="POST" accept-charset="utf-8" id="mailing-list-signup-form">
-          <input type="hidden" name="listId" value="8" />
-          <input type="hidden" name="boolean" value="true" />
-          <input type="email" name="email" placeholder="Email address" class="inline" id="footer-mailing-list-input" /><input type="submit" value="Sign up" class="button primary inline" id="footer-mailing-list-signup-button" />
-          <span class="error-summary" id="mailing-list-error-summary"></span>
-        </form>
-      </div>
-      <p>Keep up to date with the latest products and news from the world of designer lighting.</p>
-    </div>
-  </div>
   <div id="footer-copyright">
     <ul class="social">
       <li><a href="https://www.instagram.com/bestandbrown/"><img src="/views/bab/shared/images/social/instagram.svg" alt="instagram" /></a></li>
@@ -863,7 +791,7 @@ For more information please download product specification</div>
       <li><a href="https://www.pinterest.com/bestandbrown/"><img src="/views/bab/shared/images/social/pinterest.svg" alt="pinterest" /></a></li>
     </ul>
     <p>Copyright (c) Best &amp; Brown 2026 - All rights reserved - Designer & Luxury Lighting Specialists</p>
-    <p>Best &amp; Brown is a trading name of LightingEnterprises.com Ltd</p>
+    <p>Best &amp; Brown is a trading name of Lighting Design Online Ltd</p>
   </div>
 </footer>
 
@@ -874,9 +802,6 @@ For more information please download product specification</div>
     <div id="modalbg-clear"></div>
     <div id="spinner"></div>
   </div>
-
-  
-  <script type="text/javascript" src="/dist/vue-app.js"></script>
 </body>
 
 

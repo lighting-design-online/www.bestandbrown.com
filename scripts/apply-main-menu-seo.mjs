@@ -146,6 +146,16 @@ function updateRegisteredAddress(html) {
   return html;
 }
 
+function updateAttachments(html) {
+  const attachmentIds = ['32033', '24601', '25573', '23786', '23787', '23264', '23263', '33518'];
+  for (const id of attachmentIds) {
+    const remote = `https://lightbasestorage.blob.core.windows.net/rel-att/${id}.pdf`;
+    const local = `/content/rel-att/${id}.pdf`;
+    html = html.split(remote).join(local);
+  }
+  return html;
+}
+
 function updateFooterLayout(html) {
   html = html
     .replace(
@@ -885,6 +895,7 @@ async function main() {
     html = stripOld(html);
     html = updateFooterLegal(html);
     html = updateRegisteredAddress(html);
+    html = updateAttachments(html);
     html = updateFooterLayout(html);
 
     const route = routeFor(file);

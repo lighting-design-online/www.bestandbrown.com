@@ -65,7 +65,6 @@
 <meta name="msapplication-TileColor" content="#364e56">
 <meta name="msapplication-config" content="/content/bab/icons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="/assets/main-menu-seo.css" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GL2PN7CK68"></script>
   <script>
@@ -75,6 +74,7 @@
 
     gtag('config', 'G-GL2PN7CK68');
   </script>
+  <link rel="stylesheet" href="/assets/main-menu-seo.css" />
 </head>
 
 <body id="product">
@@ -608,11 +608,11 @@ E12 LED TYPE G16.5 5W<br />
 </script>  <div id="product-attachments-container">
     <h3>Downloads</h3>
     <div>
-        <a href="https://lightbasestorage.blob.core.windows.net/rel-att/23263.pdf" class="attachment-link" target="_blank">
+        <a href="/content/rel-att/23263.pdf" class="attachment-link" target="_blank">
           <img src="/views/default/shared/images/mime/pdf.svg" alt="Download Funiculi A Product Sheet" /><br />
           Funiculi A Product Sheet
         </a>
-        <a href="https://lightbasestorage.blob.core.windows.net/rel-att/23264.pdf" class="attachment-link" target="_blank">
+        <a href="/content/rel-att/23264.pdf" class="attachment-link" target="_blank">
           <img src="/views/default/shared/images/mime/pdf.svg" alt="Download Funiculi A Instructions" /><br />
           Funiculi A Instructions
         </a>

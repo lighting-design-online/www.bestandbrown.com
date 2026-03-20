@@ -4,7 +4,7 @@ import path from 'node:path';
 import url from 'node:url';
 
 const root = path.resolve(process.argv[2] || 'public/clone');
-const port = Number(process.argv[3] || 4174);
+const port = Number(process.argv[3] || process.env.PORT || 4174);
 
 const mimeTypes = new Map([
   ['.html', 'text/html; charset=utf-8'],

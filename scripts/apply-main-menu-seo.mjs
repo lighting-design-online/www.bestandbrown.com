@@ -66,6 +66,10 @@ function stripOld(html) {
   return html
     .replace(/\n?\s*<div id="search-box">\s*<div>\s*<autocomplete \/>[\s\S]*?<\/div>\s*<\/div>/g, '')
     .replace(/\n?\s*<div class="account ">\s*<ul class="account-links">[\s\S]*?<\/ul>\s*<\/div>/g, '')
+    .replace(/\n?<!-- Google Tag Manager Data Layer START-->[\s\S]*?<!-- Google Tag Manager Data Layer END -->/g, '')
+    .replace(/\n?<!-- Google Tag Manager Container START -->[\s\S]*?<!-- Google Tag Manager Container END -->/g, '')
+    .replace(/\n?<!-- Applications Insights START -->[\s\S]*?<!-- Applications Insights END -->/g, '')
+    .replace(/\n?\s*<!-- Google Tag Manager \(noscript\) -->[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->/g, '')
     .replace(/\n?\s*<link rel="stylesheet" href="\/assets\/seo-layer\.css" \/>/g, '')
     .replace(/\n?\s*<script defer src="\/assets\/seo-layer\.js"><\/script>/g, '')
     .replace(/\n?\s*<script type="text\/javascript" src="\/dist\/vue-app\.js"><\/script>/g, '')
